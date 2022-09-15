@@ -44,7 +44,7 @@ function App() {
   return (
     <animated.div className="App-background" style={changeColor}>
       <Container>
-        <Card id="quote-box" style={{color: color.dark, maxWidth:'40rem'}} className="mx-auto p-4">
+        <Card id="quote-box" style={{color: color.dark, maxWidth:'40rem'}} className="mx-auto">
           <Card.Body className="justify-content-around">
             <RandomQuote style={fadeIn} quote={quote} fadeIn={fadeIn} />
             <Stack direction="horizontal" gap={3}>
@@ -54,7 +54,6 @@ function App() {
                 className="ms-auto"
                 href={ quote.createTweetUrl() }
                 target="_blank"
-                onClick={ handleClick }
                 color={ color }
                 title="Share on Twitter"
                 value={ <Twitter /> }

@@ -21,7 +21,7 @@ function getNewQuote() {
   let quoteObj = {
     text: filteredQuotes[index].quote,
     author: filteredQuotes[index].author,
-    createTweetUrl() { return `twitter.com/intent/tweet?text=${formatQuote(quoteObj)}&hashtags=quote` }
+    createTweetUrl() { return `https://twitter.com/intent/tweet?text=${formatQuote(quoteObj)}&hashtags=quote` }
   }
   return quoteObj;
 }

@@ -1,6 +1,6 @@
 # Getting started
 
-Click [the github page of this project](https://salmandaak.github.io/fcc-random-quote-machine/) to run the app.
+Click <a href="https://salmandaak.github.io/fcc-random-quote-machine/" target="_blank">the github page of this project</a> to run the app.
 
 ## How To Use The App
 

@@ -45,7 +45,7 @@ function App() {
     <animated.div className="App-background" style={changeColor}>
       <Container>
         <Card id="quote-box" style={{color: color.dark, maxWidth:'40rem'}} className="mx-auto">
-          <Card.Body className="justify-content-around">
+          <Card.Body>
             <RandomQuote style={fadeIn} quote={quote} fadeIn={fadeIn} />
             <Stack direction="horizontal" gap={3}>
               <RandomColorButton
@@ -67,6 +67,7 @@ function App() {
             </Stack>
           </Card.Body>
         </Card>
+        <footer className="text-center text-light mt-2">Created by <a className="link-light" href="https://github.com/SalmandaAK/fcc-random-quote-machine">SalmandaAK</a></footer>
       </Container>
     </animated.div>
   );

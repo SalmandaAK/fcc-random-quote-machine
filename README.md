@@ -13,7 +13,7 @@ Click <a href="https://salmandaak.github.io/fcc-random-quote-machine/" target="_
 
 ## About Project
 
-This project is a simple random quote machine which was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project is created as one of freeCodeCamp certification project, so there is a suite test included in the app.
+This project is a simple random quote machine which was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project is created as one of freeCodeCamp certification project, so there is a suite test included in the app (in `public/index.html`).
 
 ## Features
 
@@ -43,3 +43,5 @@ Node.js installed. (I am using ver 16.17.0)
 3. If you get vulnerabilities warning from npm-audit, go to package.json, and made sure `react-scripts` is in `devDependencies`. Then in the terminal run `npm-audit --production`. Then the vulnerabilities warning should be fixed. (For more info about this vulnerabilities warning issue, see this [post](https://github.com/facebook/create-react-app/issues/11174#issue-935928547)).
 4. To run the app, run `npm start` in the terminal. The app should be running in your browser at `http://localhost:3000/`
 5. If you make some changes, then save those changes and you can see them in your browser as long as the `npm start` is running.
+6. If you want to delete the test suite, delete <code><script src="bundle.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script></code> in <code>public/index.html</code>.

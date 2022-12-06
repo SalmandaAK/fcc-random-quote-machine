@@ -1,4 +1,4 @@
-import appService from './app-service.js';
+import utility from './utility.js';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -9,8 +9,8 @@ import { useSpring, animated } from '@react-spring/web';
 import './App.css';
 
 function App() {  
-  const [quote, setQuote] = useState(appService.getNewQuote());
-  const [color, setColor] = useState(appService.getNewColor());
+  const [quote, setQuote] = useState(utility.getNewQuote());
+  const [color, setColor] = useState(utility.getNewColor());
   const fadeIn = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },
@@ -25,17 +25,17 @@ function App() {
 
   const handleClick = () => {
     setQuote(currentQuote => {
-      let newQuote = appService.getNewQuote();
+      let newQuote = utility.getNewQuote();
       while (newQuote === currentQuote) {
-        newQuote = appService.getNewQuote();
+        newQuote = utility.getNewQuote();
       }
       return newQuote;
     });
 
     setColor(currentColor => {
-      let newColor = appService.getNewColor();
+      let newColor = utility.getNewColor();
       while (newColor === currentColor) {
-        newColor = appService.getNewColor();
+        newColor = utility.getNewColor();
       }
       return newColor;
     });
@@ -67,7 +67,7 @@ function App() {
             </Stack>
           </Card.Body>
         </Card>
-        <footer className="text-center text-light mt-2">Created by <a className="link-light" href="https://github.com/SalmandaAK/fcc-random-quote-machine">SalmandaAK</a></footer>
+        <footer className="text-center text-light mt-2"><a className="link-light" href="https://github.com/SalmandaAK/fcc-random-quote-machine">View code in GitHub</a></footer>
       </Container>
     </animated.div>
   );
